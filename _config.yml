@@ -10,42 +10,54 @@ baseurl: ''
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: en
+# 언어를 한글로 설정
+lang: ko
 
 # Additional parameters for datetime localization, optional. › https://github.com/iamkun/dayjs/tree/dev/src/locale
 prefer_datetime_locale:
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Shanghai
+# 서울 표준시로 설정
+timezone: Asia/Seoul
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy                          # the main title
+# 블로그 제목. 아바타 바로 아래 큰 글씨로 표시
+title: lakhyun.k                          # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+# 블로그 소제목. title 아래에 작은 글씨로 부연설명
+tagline: 기록하자   # it will display as the sub-title
 
+# SEO를 위한 키워드들 입력. 쉽게 생각하자면 구글 검색에 어떤 키워드로 내 블로그를 검색하게 할 것인가를 결정
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+  lakhyun, lakhyun.kim, lakhyun.k, Java, Spring
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ''
+# 내 블로그로 실제 접속할 url
+url: 'https://lakhyun-kim.github.io'
 
+# 본인의 github 아이디를 입력
 github:
-  username: github_username             # change to your github username
+  username: lakhyun.k             # change to your github username
 
-twitter:
-  username: twitter_username            # change to your twitter username
+# 본인이 트위터를 사용한다면 아이디를 입력
+#twitter:
+#  username: twitter_username            # change to your twitter username
+
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@doamin.com             # change to your email address
+  # 포스트 등에 표시할 나의 이름을 입력
+  name: lakhyun.kim
+  # 나의 이메일 계정을 입력
+  email: skrgusdlekt1@gmail.com             # change to your email address
+  # 내가 사용하고 있는 소셜 서비스의 url 입력
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/username       # change to your github homepage
+    #- https://twitter.com/username      # change to your twitter homepage
+    - https://github.com/lakhyun-kim       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -73,6 +85,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
+# 원하는 테마 스킨을 선택. 기본은 light
 theme_mode:   # [light|dark]
 
 # The CDN endpoint for images.
@@ -83,9 +96,11 @@ theme_mode:   # [light|dark]
 img_cdn: 'https://raw.githubusercontent.com/cotes2020/chirpy-images/main'
 
 # the avatar on sidebar, support local or CORS resources
+# 블로그 왼쪽 상단에 표시될 나의 아바타 이미지를 설정
 avatar: '/commons/avatar.jpg'
 
 # boolean type, the global switch for ToC in posts.
+# 포스팅된 글의 오른쪽에 목차를 표시
 toc: true
 
 comments:
@@ -118,6 +133,7 @@ assets:
 pwa:
   enabled: true   # the option for PWA feature
 
+# 한 목록에 몇개의 글을 표시해 줄 것인지 선택
 paginate: 10
 
 # ------------ The following options are not recommended to be modified ------------------
