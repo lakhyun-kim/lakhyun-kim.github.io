@@ -1,7 +1,7 @@
 ---
 title: Github 블로그 생성
 author: lakhyun.kim
-categories: [github]
+categories: [git, github]
 tags: [github, github blog]
 pin: false
 ---
