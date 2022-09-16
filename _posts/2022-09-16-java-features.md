@@ -60,6 +60,4 @@ JVM은 자바 프로그램이 실행되는 가상 컴퓨터(VM)이다.
 
 Java 애플리케이션은 JVM하고만 상호작용을 하기 때문에 OS와 하드웨어에 독립적이라 다른 OS에서도 프로그램의 변경없이 실행이 가능하다. 일반적으로 많이 사용되는 주요 OS용 JVM을 제공하고 있고, 이렇게 함으로써 자바의 중요한 장점 중의 하나인 “Write once, run anywhere(한번 작성하면, 어디서나 실행된다.)” 이 가능하게 되는 것이다.
 
-<p align="center">
-  <img src = "/assets/img/OS-JVM.png">
-</p>
+<img src = "/assets/img/OS-JVM.png">

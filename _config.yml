@@ -99,7 +99,7 @@ img_cdn: ''
 
 # the avatar on sidebar, support local or CORS resources
 # 블로그 왼쪽 상단에 표시될 나의 아바타 이미지를 설정
-avatar: '/commons/avatar.jpg'
+avatar: ''
 
 # boolean type, the global switch for ToC in posts.
 # 포스팅된 글의 오른쪽에 목차를 표시
