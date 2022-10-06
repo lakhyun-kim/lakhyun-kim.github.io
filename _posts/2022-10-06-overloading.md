@@ -20,19 +20,19 @@ pin: false
 가장 대표적인 것은 **println메서드**이다. println메서드를 호출할 때 매개변수로 지정하는 값의 타입에 따라서 호출되는 println메서드가 달라진다.
 
 ```java
-[보기1] 매개변수의 타입과 개수가 같기 때문에 **오버로딩**이 성립하지 않는다.
+[보기1] 매개변수의 타입과 개수가 같기 때문에 오버로딩이 성립하지 않는다.
 int add(int a, int b) { return a + b; }
 int add(int x, int y) { return x + y; }
 
-[보기2] 매개변수의 타입과 개수가 같기 때문에 **오버로딩**이 성립하지 않는다.
+[보기2] 매개변수의 타입과 개수가 같기 때문에 오버로딩이 성립하지 않는다.
 int add(int a, int b) { return a + b; }
 long add(int a, int b) { return (long)(a + b); }
 
-[보기3] 매개변수의 순서가 다르기 때문에 **오버로딩**이 성립한다.
+[보기3] 매개변수의 순서가 다르기 때문에 오버로딩이 성립한다.
 int add(int a, long b) { return a + b; }
 long add(long a, int b) { return a + b; }
 
-[보기4] 매개변수의 타입과 개수가 다르기 때문에 **오버로딩**이 성립한다.
+[보기4] 매개변수의 타입과 개수가 다르기 때문에 오버로딩이 성립한다.
 int add(int a, int b) { return a + b; }
 long add(long a, long b) { return a + b; }
 long add(int[] a) { // 배열의 모든 요소의 합을 반환한다.
