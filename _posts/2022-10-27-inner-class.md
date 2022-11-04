@@ -72,7 +72,7 @@ class Outer {
 
 아래는 내부 클래스에서 외부 클래스의 변수들에 대한 **접근성**을 보여주는 예제이다.
 
-```jsx
+```java
 class InnerEx3 {
 	private int outerIv = 0;
 	static int outerCv = 0;
@@ -105,7 +105,7 @@ class InnerEx3 {
 
 컴파일 했을 때 생성되는 파일명은 ‘**외부 클래스명$내부 클래스명.class**’형식으로 되어 있다.
 
-```jsx
+```java
 class Outer {
 	int value = 10;  // Outer.this.value
 
@@ -142,7 +142,7 @@ Outer.this.value : 10
 
 이름이 없고 클래스의 선언과 객체의 생성을 동시에 하기 때문에 단 한번만 사용될 수 있고 오직 하나의 객체만을 생성할 수 있는 **일회용 클래스**이다.
 
-```jsx
+```java
 new 조상클래스이름() {
 	// 멤버 선언
 }
@@ -154,7 +154,7 @@ new 구현인터페이스이름() {
 
 이름이 없기 때문에 생성자도 가질 수 없으며, 오로지 단 하나의 클래스를 상속받거나 단 하나의 인터페이스만을 구현할 수 있다.
 
-```jsx
+```java
 class InnerEx6 {
 	Object iv = new Object() { void method() { } };        // 익명클래스
 	static Object cv = new Object() { void method() { } }; // 익명클래스
@@ -167,7 +167,7 @@ class InnerEx6 {
 
 아래 예제를 실행하면 아무것도 나타나지 않는다. 단지 익명클래스로 변환하는 예를 보여주기 위한 예제다.
 
-```jsx
+```java
 import java.awt.*;
 import java.awt.event.*;
 
